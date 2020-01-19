@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class VirtualPet2Test {
-	// arrange
+	// arrange; variable declaration. new keyword is used t create the object
 	VirtualPet2 underTest = new VirtualPet2();
 
 	@Test
@@ -49,14 +49,13 @@ class VirtualPet2Test {
 		// assert
 		assertEquals(beforePlay - 1, result);
 	}
-
 	@Test
 	public void energyDecreasesBy2AfterPlay() {
-		// act
+		//act
 		int afterPlay = underTest.getEnergy();
 		underTest.play();
 		int result = underTest.getEnergy();
-		// assert
+		//assert
 		assertEquals(afterPlay - 2, result);
 	}
 }
