@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class VirtualPet2Test {
 	// arrange; variable declaration. new keyword is used t create the object
-	VirtualPet2 underTest = new VirtualPet2();
+	VirtualPet underTest = new VirtualPet();
 
 	@Test
 	public void hungerShouldBe0AtTheStart() {
@@ -58,4 +58,5 @@ class VirtualPet2Test {
 		//assert
 		assertEquals(afterPlay - 2, result);
 	}
+	
 }
